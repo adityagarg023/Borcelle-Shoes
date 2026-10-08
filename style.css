@@ -366,3 +366,132 @@ nav {
     width: 0.35vw;
     border-radius: 50%;
 }
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 0 3vw;
+}
+
+#page4 h4 {
+    padding: 10px 20px;
+    border: 1px solid #00000054;
+    border-radius: 25px;
+    font-weight: 500;
+    color: #000000bb;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#page4 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+#page4 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#page4 a {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#page4 h4:hover a {
+    color: white;
+}
+
+.blacky {
+    height: 110vh;
+    background-color: black;
+    border-radius: 21px;
+    display: flex;
+    align-items: center;;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.blacky .left {
+    color: #504A45;
+    width: 40%;
+    height: 100%;
+    align-content: center;
+    border-radius: 21px;
+}
+
+.blacky .left .heading {
+    font-size: 4.5vw;
+    border-left: 2px solid #504A45;
+    margin-left: 5vw;    
+}
+
+.blacky .left p {
+    margin-left: 5vw;
+    font-weight: lighter;
+    margin-right: 7vw;
+    color: white;
+}
+
+.blacky .right {
+    width: 60%;
+    height: 100%;
+    border-radius: 21px;
+    background-size: cover;
+}
+
+#design {
+    margin-left: 0.2vw;
+    color: white;
+}
+
+#project, #execution {
+    margin-left: 1.5vw;
+}
+
+.slideContain {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider  {
+    justify-content: space-between;
+    display: flex;
+    width: 200vw;
+    height: auto;
+    padding-top: 5vh;
+    margin-left: 4vw;
+    cursor: grab;
+    animation: slideLeft 30s linear infinite ;
+}
+
+.slider .swiper{
+    height: 25vh;
+    font-weight: lighter;
+    font-size: 2.4vh;
+    align-items: flex-start;
+    width: 25vw;
+    border-left: 0.5px solid black;
+    height: max-content;
+    padding-left: 5vw;
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%);
+}
