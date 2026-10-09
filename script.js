@@ -68,3 +68,26 @@ execution.addEventListener("click", function () {
     text.innerHTML = 'We’re with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience.'
     img.style.backgroundImage = "url('./Media/page4-3.jpg')"
 })
+
+let loader = document.querySelector("#loader")
+setTimeout(function () {
+    loader.style.top = "-100%"
+}, 2900)
+
+let comfort = document.querySelector("#comfort")
+let fashion = document.querySelector("#fashion")
+let performance = document.querySelector("#performance")
+comfort.style.display = "none"
+fashion.style.display = "none"
+performance.style.display = "none"
+setTimeout(function () {
+    comfort.style.display = ""
+}, 500)
+setTimeout(function () {
+    comfort.style.display = "none"
+    fashion.style.display = ""
+}, 1300)
+setTimeout(function () {
+    performance.style.display = ""
+    fashion.style.display = "none"
+}, 2100)

@@ -553,3 +553,24 @@ nav {
     padding: 3vh 3vw;
     font-weight: lighter;
 }
+
+#loader {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    transition: all linear 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1 {
+    color: transparent;
+    font-size: 5vw;
+    background: linear-gradient(to right, orange, orangered);
+    -webkit-background-clip: text;
+    position: absolute;
+}
