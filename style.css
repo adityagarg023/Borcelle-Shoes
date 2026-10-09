@@ -467,6 +467,8 @@ nav {
   width: 100vw;
   overflow: hidden;
   position: relative;
+  padding-bottom: 10vh;
+  box-sizing: border-box;
 }
 
 .slider  {
@@ -493,5 +495,61 @@ nav {
 
 @keyframes slideLeft {
   from { transform: translateX(0); }
-  to   { transform: translateX(-50%);
+  to   { transform: translateX(-50%); }
+}
+
+#page5 {
+    height: 85vh;
+    width: 100%;
+}
+
+#footer {
+    height: 85vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#footer h1 {
+    font-size: 17vw;
+    padding-left: 7vw;
+}
+
+.footertop {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 8vw;
+}
+
+.footertop .link {
+    font-size: xx-large;
+}
+
+.footertop .form {
+    font-weight: lighter;
+    font-size: larger;
+    width: 20vw;
+    border-bottom: 0.5px solid wheat;
+    padding-bottom: 10vh;
+}
+
+.footerbottom {
+    border-top: 0.7px solid wheat;
+    height: 10vh;
+    width: 100%;
+}
+
+.footerbottom .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 3vw;
+    font-weight: lighter;
 }
